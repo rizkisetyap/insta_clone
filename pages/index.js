@@ -1,15 +1,30 @@
+// components
 import Head from "next/head";
+import Header from "../components/Header";
+import Feed from "../components/Feed";
+import Modal from "../components/Modal";
+
+// store
+import { useRecoilValue } from "recoil";
+import { modalState } from "../atoms/modulAtom";
 
 const Home = () => {
+  const open = useRecoilValue(modalState);
+  console.log(open);
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="bg-gray-100 h-screen overflow-y-scroll scrollbar-hide">
       <Head>
         <title>InstaClone</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex flex-col items-center text-purple-500">
-        <h1>Instagram clone</h1>
-      </main>
+      <div className="">
+        <Header />
+        {/* feed */}
+        <Feed />
+        {/* modal */}
+        <Modal />
+        {/* todo 3:59:50 */}
+      </div>
     </div>
   );
 };
