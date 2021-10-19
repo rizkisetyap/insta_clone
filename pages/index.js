@@ -10,7 +10,7 @@ import { modalState } from "../atoms/modulAtom";
 
 const Home = () => {
   const open = useRecoilValue(modalState);
-  console.log(open);
+
   return (
     <div className="bg-gray-100 h-screen overflow-y-scroll scrollbar-hide">
       <Head>
