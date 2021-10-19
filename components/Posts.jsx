@@ -16,7 +16,7 @@ const Posts = () => {
       ),
     [db]
   );
-  // console.log("post :", posts);
+
   return (
     <div className="">
       {posts.map((post) => (
@@ -27,6 +27,7 @@ const Posts = () => {
             userImg: post.data().profileImg,
             caption: post.data().caption,
             img: post.data().image,
+            id: post.id,
           }}
         />
       ))}
