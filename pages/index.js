@@ -12,7 +12,7 @@ const Home = () => {
   const open = useRecoilValue(modalState);
 
   return (
-    <div className="bg-gray-100 h-screen overflow-y-scroll scrollbar-hide">
+    <div className="bg-gray-100 h-screen overflow-y-scroll scrollbar-hide relative">
       <Head>
         <title>InstaClone</title>
         <link rel="icon" href="/favicon.ico" />
