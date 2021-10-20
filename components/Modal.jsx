@@ -5,7 +5,7 @@ import { Fragment } from "react";
 import { CameraIcon } from "@heroicons/react/outline";
 import { useRef, useState } from "react";
 import { useSession } from "next-auth/react";
-import { db, storage } from "../firebase";
+import { db, storage } from "../firebase.config";
 import {
   addDoc,
   collection,

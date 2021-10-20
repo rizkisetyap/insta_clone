@@ -24,7 +24,7 @@ import {
   doc,
   deleteDoc,
 } from "firebase/firestore";
-import { db } from "../firebase";
+import { db } from "../firebase.config";
 
 const Post = ({ post }) => {
   const { data: session } = useSession();
